@@ -2,74 +2,108 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0a0e1a" media="(prefers-color-scheme: dark)">
-<title>DuaDoor — Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DuaDoor Privacy Policy</title>
+<meta name="description" content="DuaDoor collects no personal data. Your du'as, moods and app choices stay on your iPhone.">
 <style>
-  :root { color-scheme: light dark; }
-  html { background: #fff; }
+  :root {
+    --bg: #0A0E1A;
+    --surface: #121829;
+    --text: #E8E6E1;
+    --muted: #A3A7B5;
+    --gold: #C9A84C;
+    --line: #232B42;
+  }
+  * { box-sizing: border-box; }
   body {
-    max-width: 40rem;
-    margin: 0 auto;
-    /* Keep everything clear of the status bar, Dynamic Island and home
-       indicator on phones; on a desktop the env() values are 0 and the
-       plain margins take over. */
-    padding:
-      max(2.5rem, calc(env(safe-area-inset-top, 0px) + 1.5rem))
-      max(1.25rem, env(safe-area-inset-right, 0px))
-      max(3rem, calc(env(safe-area-inset-bottom, 0px) + 2rem))
-      max(1.25rem, env(safe-area-inset-left, 0px));
-    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-    -webkit-text-size-adjust: 100%;
-    color: #1a2233;
-    background: #fff;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
-  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .25rem; }
-  h2 { font-size: 1.1rem; margin: 2rem 0 .5rem; }
-  p, li { margin: 0 0 .75rem; }
-  ul { padding-left: 1.25rem; }
-  .meta { opacity: .7; font-size: .9rem; margin-bottom: 1.5rem; }
-  .footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid rgba(128,128,128,.25); font-size: .9rem; opacity: .8; }
-  a { color: #8a6d1f; word-break: break-word; }
-  @media (prefers-color-scheme: dark) {
-    html { background: #0a0e1a; }
-    body { color: #f2f4f8; background: #0a0e1a; }
-    a { color: #c9a84c; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+  .mark { color: var(--gold); font-size: 28px; letter-spacing: .02em; }
+  h1 { font-size: 32px; line-height: 1.2; margin: 8px 0 4px; }
+  .date { color: var(--muted); margin: 0 0 32px; }
+  h2 { font-size: 20px; margin: 40px 0 8px; color: var(--gold); }
+  p, li { color: var(--text); }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    border-radius: 12px;
+    padding: 18px 20px;
   }
+  .summary p { margin: 0; }
+  a { color: var(--gold); }
+  .muted { color: var(--muted); }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
 </style>
 </head>
 <body>
-<h1>DuaDoor — Privacy Policy</h1>
-<p class="meta">Effective 22 September 2026</p>
+<main>
+  <div class="mark">☾ DuaDoor</div>
+  <h1>Privacy Policy</h1>
+  <p class="date">Effective date: 2 October 2026</p>
 
-<p><strong>DuaDoor does not collect any data.</strong> Not names, not email addresses, not usage, not analytics, not crash reports. There is no account to create and no server to send anything to. Everything the app knows stays on your device.</p>
+  <div class="summary">
+    <p><strong>In short:</strong> DuaDoor does not collect, store or share your personal data. Your du'as, mood answers, streaks and the apps you choose to block stay on your iPhone. We have no accounts, no servers that receive your data, no analytics and no advertising trackers.</p>
+  </div>
 
-<h2>What stays on your device</h2>
-<ul>
-  <li><strong>The apps you choose to guard.</strong> DuaDoor uses Apple's Screen Time framework (Family Controls). When you pick apps, Apple gives DuaDoor opaque tokens — DuaDoor never receives, and cannot read, the names or icons of the apps you select. These tokens are stored only on your device and never leave it.</li>
-  <li><strong>Your onboarding answers, streak, unlock window, and Daily Wird counts.</strong> Stored locally in the app's own container on your device.</li>
-  <li><strong>Notification preferences.</strong> Whether you allowed notifications is decided by iOS and read by the app; nothing is sent anywhere.</li>
-</ul>
+  <h2>1. Who we are</h2>
+  <p>DuaDoor ("the app", "we", "us") is developed by SEMIR HUSEN, based in Toronto, Ontario, Canada. For any privacy question, contact <a href="mailto:support@duadoorapp.com">support@duadoorapp.com</a>.</p>
 
-<h2>Purchases</h2>
-<p>Subscriptions and the lifetime purchase are handled entirely by Apple through the App Store. DuaDoor checks your entitlement on your device using Apple's StoreKit. DuaDoor does not see your payment details and does not run a server that records your purchase.</p>
+  <h2>2. Information that stays on your device</h2>
+  <p>To work, DuaDoor saves the following only in your iPhone's local app storage. It is never sent to us or to anyone else:</p>
+  <ul>
+    <li>Your answers during onboarding</li>
+    <li>The mood you select before a du'a, and which du'as you have seen</li>
+    <li>Your streak, Daily Wird progress and unlock timers</li>
+    <li>Your settings and preferences</li>
+  </ul>
+  <p>We cannot see, access or recover this information. Deleting DuaDoor from your iPhone deletes it permanently.</p>
 
-<h2>No tracking, no third parties</h2>
-<p>DuaDoor contains no analytics, advertising, or tracking SDKs and makes no network requests of its own. The only network activity is Apple's own App Store and StoreKit traffic.</p>
+  <h2>3. Screen Time and app blocking</h2>
+  <p>DuaDoor uses Apple's Screen Time (Family Controls) framework to block the apps you choose. Apple gives DuaDoor only anonymous tokens for your selections. We cannot see the names of the apps you block, your browsing, or how you use other apps, and none of this information leaves your device.</p>
 
-<h2>Deleting your data</h2>
-<p>Delete the app. Everything DuaDoor stored is removed with it, and iOS removes the Screen Time shields the app set.</p>
+  <h2>4. Purchases and subscriptions</h2>
+  <p>Subscriptions are processed entirely by Apple through the App Store. We never receive your name, email address, Apple Account details or payment information. Apple tells the app only whether you have an active subscription. Apple's handling of your purchase information is described in <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. You can manage or cancel subscriptions in your iPhone Settings under your Apple Account.</p>
 
-<h2>Children</h2>
-<p>DuaDoor uses the individual Screen Time authorization for the person using the device. It is not designed to manage another person's device and does not collect data from anyone.</p>
+  <h2>5. Notifications</h2>
+  <p>Reminders and alerts from DuaDoor are created on your device. We do not use push notification servers and do not receive any notification data.</p>
 
-<h2>Changes</h2>
-<p>If this policy ever changes, the new version will be published at this address with a new effective date.</p>
+  <h2>6. What we do not do</h2>
+  <ul>
+    <li>No user accounts or sign-in</li>
+    <li>No analytics, crash-reporting or advertising SDKs</li>
+    <li>No tracking across apps or websites, and no advertising identifier</li>
+    <li>No location access</li>
+    <li>No selling, renting or sharing of personal data</li>
+    <li>No artificial intelligence services that receive your content</li>
+  </ul>
 
-<h2>Contact</h2>
-<p><a href="mailto:support@duadoorapp.com">support@duadoorapp.com</a></p>
+  <h2>7. When you contact us</h2>
+  <p>If you email <a href="mailto:support@duadoorapp.com">support@duadoorapp.com</a>, we receive your email address, your name if you include it, and whatever you write. We use this only to answer you. We keep it no longer than needed to resolve your request and handle any follow-up, and we do not share it except with our email provider, which delivers the message. If you are in the EU or UK, the legal basis is our legitimate interest in responding to you.</p>
 
-<p class="footer"><a href="support/">Support</a> · <a href="mailto:support@duadoorapp.com">support@duadoorapp.com</a></p>
+  <h2>8. This website</h2>
+  <p>This policy is hosted on GitHub Pages. Like any website host, GitHub may log technical data such as your IP address when you visit, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a>. We do not add cookies, analytics or tracking to this page.</p>
+
+  <h2>9. Your rights</h2>
+  <p>Depending on where you live, including the European Union and United Kingdom (GDPR), Canada (PIPEDA) and California (CCPA/CPRA), you may have the right to access, correct, delete or receive a copy of your personal data, to object to or restrict its use, and to withdraw consent.</p>
+  <p>Because the app's data stays on your device, you already control it fully: deleting the app removes it. For any emails you have sent us, write to <a href="mailto:support@duadoorapp.com">support@duadoorapp.com</a> and we will respond within one month. If you are in the EU or UK, you also have the right to complain to your local data protection authority.</p>
+
+  <h2>10. Children</h2>
+  <p>DuaDoor is not directed at children under 13, and we do not knowingly collect personal data from anyone. The app itself collects no personal data from any user.</p>
+
+  <h2>11. Changes to this policy</h2>
+  <p>If DuaDoor ever starts collecting or sharing data, we will update this policy and change the effective date before that change reaches the app, and where the law requires it, we will ask for your consent first.</p>
+
+  <h2>12. Contact</h2>
+  <p>SEMIR HUSEN<br>Toronto, Ontario, Canada<br><a href="mailto:support@duadoorapp.com">support@duadoorapp.com</a></p>
+
+  <footer>© 2026 DuaDoor. Your du'as never leave your phone.</footer>
+</main>
 </body>
 </html>
